@@ -1,0 +1,543 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    background: #000000;
+    background: -webkit-linear-gradient(to right, #434343, #000000);
+    background: linear-gradient(to right, #434343, #000000);
+
+}
+
+
+/*header sección*/
+.logo-brand {
+    min-width: 160px;
+    max-width: 180px;
+}
+
+#Banner {
+    position: relative;
+    height: 100vh;
+    min-height: 450px;
+    max-height: 1080px;
+    background: url('../imagenes/Banner.png');
+    background-size: cover;
+    padding: 15px;
+    padding-top: 90px;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+.bi {
+    font-size: 28px;
+
+
+}
+
+#lead-overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(126, 141, 147, 0.8);
+    z-index: 1
+}
+
+#lead-content h1 {
+    max-width: 800px;
+    margin: 0 auto 60px auto;
+    text-align: center;
+    color: #fff;
+    font-weight: 900;
+    font-size: 5em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    line-height: 0.9em
+}
+
+#lead-content h3 {
+    color: #fdfdfd;
+    text-align: center;
+    font-weight: 500;
+    font-size: 2.25em;
+    margin-bottom: 15px
+}
+
+
+#lead-down {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+    bottom: 15px;
+    color: #fff
+}
+
+
+
+#lead-down i {
+    animation: pulsate 1.5s ease;
+    animation-iteration-count: infinite;
+    padding-top: 5px;
+    color: #fff;
+}
+
+
+/*About sección*/
+
+.about {
+    padding: 78px 0px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.about img {
+    height: auto;
+    width: 75%;
+    max-width: 250px;
+    min-width: 100px;
+
+    margin-right: 30px;
+}
+
+.about-text {
+    width: 550px;
+}
+
+.main {
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about-text h1 {
+    color: white;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.about-text h5 {
+    color: white;
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+.about-text p {
+    color: rgb(156, 154, 154);
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+
+.button {
+    background: rgb(146, 126, 126);
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+#boton2 {
+    margin-left: 10px
+}
+
+.button:hover {
+    background: transparent;
+    border: 2px solid rgb(71, 66, 66);
+    cursor: pointer;
+}
+
+#icono{
+  font-size:15px;
+}
+
+
+/*Sección Educación*/
+
+.heading {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    margin-bottom: auto;
+}
+
+::selection {
+    color: #fff;
+    background: #b9b6b6;
+}
+
+p {
+    font-size: 20px;
+    color: #000000;
+}
+
+.titulo{
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.wrapper {
+    max-width: 1080px;
+    margin: 50px auto;
+    padding: 0 20px;
+    position: relative;
+    
+}
+
+.wrapper .center-line {
+    position: absolute;
+    height: 100%;
+    width: 4px;
+    background: #fff;
+    left: 50%;
+    top: 20px;
+    transform: translateX(-50%);
+}
+
+.wrapper .row {
+    display: flex;
+}
+
+.wrapper .row-1 {
+    justify-content: flex-start;
+}
+
+.wrapper .row-2 {
+    justify-content: flex-end;
+}
+
+.wrapper .row section {
+    background: #fff;
+    border-radius: 10px;
+    width: calc(50% - 40px);
+    padding: 20px;
+    position: relative;
+}
+
+.wrapper .row section::before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background: #fff;
+    top: 28px;
+    z-index: -1;
+    transform: rotate(45deg);
+}
+
+.row-1 section::before {
+    right: -7px;
+}
+
+.row-2 section::before {
+    left: -7px;
+}
+
+.row section .icon,
+.center-line .scroll-icon {
+    position: absolute;
+    background: #f2f2f2;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #7e7474;
+    font-size: 17px;
+    box-shadow: 0 0 0 4px #fff, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+}
+
+.center-line .scroll-icon {
+    bottom: 0px;
+    left: 50%;
+    font-size: 25px;
+    transform: translateX(-50%);
+}
+
+.row-1 section .icon {
+    top: 15px;
+    right: -60px;
+}
+
+.row-2 section .icon {
+    top: 15px;
+    left: -60px;
+}
+
+.row section .details,
+.row section .bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.row section .details .title {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.row section p {
+    margin: 10px 0 17px 0;
+
+}
+
+.row section .bottom a {
+    text-decoration: none;
+    background: rgb(146, 126, 126);
+    color: #fff;
+    padding: 7px 15px;
+    border-radius: 5px;
+    /* font-size: 17px; */
+    font-weight: 400;
+    transition: all 0.3s ease;
+}
+
+.row section .bottom a:hover {
+    transform: scale(0.97);
+}
+
+
+/*Experiencia Sección*/
+
+#experience {
+    padding: 20px 15px 20px 15px;
+  
+    text-align: center;
+  
+  }
+  
+  
+  
+  .experience-block {
+    background-color: rgb(255, 255, 255);
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+    padding: 15px;
+    border: 1px solid #000000;
+    text-align: left;
+    box-shadow: 10px 10px 30px rgb(0, 0, 0);
+    border-radius: 14px;
+    transition: 0.5s;
+    object-fit: cover;
+    cursor: pointer;
+    
+    
+  
+  }
+  
+  .experience-block:hover{
+    transform: scale(1.2)
+  }
+  
+  .experience-block h3 {
+    font-weight: 500;
+    float: left;
+    margin: 0;
+    color: #000000;
+    margin-bottom: 10px;
+  }
+  
+  .experience-block span {
+    color: #0b0c0c;
+    float: right
+  }
+  
+  .experience-block p {
+    color: #323333;
+    clear: both;
+    font-weight: 500;
+    margin: 0 0 15px 0;
+     
+  }
+  
+  .experience-block p,
+  .experience-block ul {
+    margin: 0;
+    color: #74808a;
+    font-size: 0.9em
+  }
+  
+  .experience-block ul {
+    padding: 0 0 0 15px
+  }
+  
+ .titulo {
+    color: #fff;
+    text-align: center;
+  }
+
+
+  /*Sección proyectos*/
+
+  #proyectos {
+    box-sizing: border-box;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    
+  }
+
+  .container{
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .caja{
+    height: 310px;
+    max-width: 350px;
+    margin: 0 20px;
+    background: white;
+    transition: 0.4s;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    border-radius:10px;
+  }
+
+  h2 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .caja:hover{
+    height: 470px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+  }
+  .caja .img{
+    height: 200px;
+    width: 100%;
+  }
+
+  .caja .img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .caja .top-text{
+    padding: 5px;
+  }
+  .caja .top-text .name{
+    font-size: 25px;
+    font-weight: 600;
+    color: #202020;
+  }
+  .caja .top-text p{
+    font-size: 20px;
+    font-weight: 600;
+    color: #e74c3c;
+    line-height: 20px;
+  }
+  .caja .bottom-text{
+    padding: 0 20px 10px 20px;
+    margin-top: 5px;
+    background: white;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.1s;
+  }
+  .caja:hover .bottom-text{
+    opacity: 1;
+    visibility: visible;
+  }
+  .caja .bottom-text .text{
+    text-align: justify;
+  }
+  .caja .bottom-text .btn{
+    margin: 10px 0;
+    text-align: left;
+  }
+  .caja .bottom-text .btn a{
+    text-decoration: none;
+    background: #917775;
+    color: #f2f2f2;
+    padding: 5px 8px;
+    border-radius: 3px;
+    display: inline-flex;
+    transition: 0.2s;
+  }
+  .caja .bottom-text .btn a:hover{
+    transform: scale(0.9);
+  }
+
+  /*footer*/
+  #footer {
+    color:#fff;
+    font-size:14px;
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    
+    
+  }
+
+  #footer p{
+    color:#fff;
+    font-size:14px;
+    
+  }
+
+  @media screen and (max-width: 978px) {
+    .container{
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+    .caja{
+      max-width: 700px;
+      margin: 20px 0;
+    }
+  }
+  
+
+@media(max-width: 790px) {
+    .wrapper .center-line {
+        left: 40px;
+    }
+
+    .wrapper .row {
+        margin: 30px 0 3px 60px;
+    }
+
+    .wrapper .row section {
+        width: 100%;
+    }
+
+    .row-1 section::before {
+        left: -7px;
+    }
+
+    .row-1 section .icon {
+        left: -60px;
+    }
+}
+
+@media(max-width: 440px) {
+
+    .wrapper .center-line,
+    .row section::before,
+    .row section .icon {
+        display: none;
+    }
+
+    .wrapper .row {
+        margin: 10px 0;
+    }
+}
